@@ -12,7 +12,7 @@
     var name = url.get('name');
     var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`; 
     var checkAdmin = function(){
-    if(document.domain !== '0xgodson.github.io'){
+    if(document.domain !== '0xgodson.me'){
       return true;      
     }else{
       return false;
