@@ -10,7 +10,9 @@
   <script>
     var url = new URL(document.location).searchParams;
     var name = url.get('name');
-    var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`; 
+    if(name !== null){
+      var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`;
+    }
     var checkAdmin = function(){
     if(document.domain !== '0xgodson.me'){
       return true;      
