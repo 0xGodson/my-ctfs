@@ -12,7 +12,7 @@
     </p>
     <script>
         const params = new URL(location.href).searchParams
-        const username = decodeURIComponent(url.get('name')).replaceAll("!","")
+        const username = decodeURIComponent(params.get('name')).replaceAll("!","")
         const regex = /->/
         if (!regex.test(username)){
             window.xss.innerHTML = "<!--" + username + "-->";
