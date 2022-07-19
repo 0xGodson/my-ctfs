@@ -9,7 +9,7 @@
 
   <script>
     var url = new URL(document.location).searchParams;
-    var name = decodeURIComponent(url.get('name')).replaceAll("!","")
+    var name = url.get('name')
     if(name !== 'null' && name){
       var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`
     }
