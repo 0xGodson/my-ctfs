@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Chal</title>
+</head>
+<body>
+    <p id="test"></p>
+    <p id="xss">
+    </p>
+    <script>
+        const params = new URL(location.href).searchParams
+        const username = decodeURIComponent(params.get('name'))
+        const regex = /->/
+        if (!regex.test(username)){
+            window.xss.innerHTML = "<!--" + username + "-->";
+            window.test.innerText = "Hi "+ username
+
+        }else{
+            window.test.innerText = "Hi Boomer!"
+        }
+        
+
+    </script>
+
+<h1>HoFs</h1>
+<ul>
+  <li>You?</li>
+</ul>
+
+<a href="https://twitter.com/0xGodson_">Share Your Solution here :)</a><br>
+</body>
+</html>
