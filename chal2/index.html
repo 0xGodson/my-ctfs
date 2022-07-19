@@ -12,7 +12,7 @@
     </p>
     <script>
         const params = new URL(location.href).searchParams
-        const username = decodeURIComponent(params.get('name'))
+        const username = decodeURIComponent(url.get('name')).replaceAll("!","")
         const regex = /->/
         if (!regex.test(username)){
             window.xss.innerHTML = "<!--" + username + "-->";
@@ -28,6 +28,7 @@
 <h1>HoFs</h1>
 <ul>
     <li><a href=https://twitter.com/monkehack>monke#0331</a> 🩸</li>
+    <li><a href=https://twitter.com/rs_loves_bugs>_rs</a> uninteded - Fixed</li>
   <li>You?</li>
 </ul>
 
