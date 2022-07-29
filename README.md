@@ -2,5 +2,5 @@
 
 ## Goal is to Pop-up `alert(document.domain)`
 
-*  <a href="/my-ctfs/chal1/">Challenge 1</a> - Difficulty - Medium/Hard
-*  <a href="/my-ctfs/chal2/">Challenge 2</a> - Difficulty - Easy
+*  <a href="/chal1/">Challenge 1</a> - Difficulty - Medium/Hard
+*  <a href="/chal2/">Challenge 2</a> - Difficulty - Easy
