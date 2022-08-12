@@ -2,12 +2,19 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <base href="//raw.githubusercontent.com/">
-    <script src="/0xGodson/my-ctfs/main/log.php"></script>
+    <script src="../dompurify/purify.js"></script>
     <title>XSS</title>
+      
   </head>
   <body>
-    <header></header>
+    <h1 id="sayHi">Hi</h1>
+    <script>
+    var url = new URL(document.location).searchParams;
+    var name = url.get('name')
+    if(name !== 'null' && name){
+      var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`
+    }
+    </script>
     <main></main>
     
   </body>
