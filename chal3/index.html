@@ -12,10 +12,22 @@
     var url = new URL(document.location).searchParams;
     var name = url.get('name')
     if(name !== 'null' && name){
-      var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`
+      document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name)}`
+    }else{
+      document.getElementById('sayHi').innerHTML = `Hi User`
     }
     </script>
-    <!--Hint: if you get stuck, have a look here for some leads :) https://github.com/0xGodson/my-ctfs -->
+    
+    <h1>HoFs</h1>
+<ul>
+  
+    <li>You?</li>
+</ul>
+
+<a href="https://twitter.com/0xGodson_">Share Your Solution here :)</a><br>
+    
+    
+    <!--Hint: if you get stuck, have a look at here for some leads :) https://github.com/0xGodson/my-ctfs -->
     
   </body>
 </html>
