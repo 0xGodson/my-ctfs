@@ -3,5 +3,5 @@
 ## Goal is to Pop-up `alert(document.domain)`
 
 *  <a href="/chal1/">Challenge 1</a> - Difficulty - Medium
-*  <a href="/chal2/">Challenge 2</a> - Difficulty - Easy
+*  <a href="/chal2/">Challenge 2</a> - Difficulty - Very Easy - Easy
 *  <a href="/chal3/">Challenge 3</a> - Difficulty - Medium
