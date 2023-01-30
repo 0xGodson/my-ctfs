@@ -7,3 +7,4 @@
 *  <a href="/chal3/">Challenge 3</a> - Difficulty - Medium - Hard
 *  <a href="//challenge-1022.intigriti.io">Guest Challenge for Intigriti</a> - Difficulty - Hard - Insane
 *  <a href="//xss.0xgodson.com">Challenge 4</a> - Difficulty - Easy
+*  <a href="/chal5/">Challenge 5</a> - Difficulty - Easy 
