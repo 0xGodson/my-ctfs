@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-random'">
+    <title>XSS</title>
+    <script nonce="random" src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script nonce="random" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.8/purify.min.js"></script>
+</head>
+<body id="body">
+    <script nonce="random">
+    var params = new URL(location.href).searchParams;
+    var name = params.get('name');
+    // let's sanitize the input :)
+    name = DOMPurify.sanitize(name);
+    if (name) {
+        var attr = $('[name="' + decodeURIComponent(name) + '"]');
+        tag = '<yourname id="name-' + decodeURIComponent(name) + '">' + "Hey!" + "</yourname>";
+        $("#body").append(tag)
+    }else{
+        document.body.innerHTML = "Hii!";
+    }
+    </script>
+</body>
+</html>
