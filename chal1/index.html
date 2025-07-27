@@ -9,13 +9,14 @@
 
   <script>
     var url = new URL(document.location).searchParams;
+    site_domain = document.domain;
     var name = url.get('name')
     if(name !== 'null' && name){
       var innerhtml = document.getElementById('sayHi').innerHTML = `Hi ${DOMPurify.sanitize(name).toLowerCase()}`
     }
     ; 
     var checkAdmin = function(){
-    if(document.domain !== 'ctf.0xgodson.com'){
+    if(document.domain !== site_domain){
       return true;      
     }else{
       return false;
@@ -34,6 +35,6 @@
   </ul>
   
   <s><a href="https://twitter.com/0xGodson_">Share Your Solution here :)</a></s><br>
-  <h3><a href="https://ctf.0xgodson.com/chal1/?name=<img name=Domain><input id=admin value='<img src=x onerror=alert(document.domain)>'>">PoC</a></h3>
+  <h3><a href="./chal1/?name=<img name=Domain><input id=admin value='<img src=x onerror=alert(document.domain)>'>">PoC</a></h3>
 </body>
 </html>

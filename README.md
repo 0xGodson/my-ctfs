@@ -2,9 +2,8 @@
 
 ## Goal is to Pop-up `alert(document.domain)`
 
-*  <a href="/chal1/">Challenge 1</a> - Difficulty - Medium
-*  <a href="/chal2/">Challenge 2</a> - Difficulty - Very Easy - Easy
-*  <a href="/chal3/">Challenge 3</a> - Difficulty - Medium - Hard
-*  <a href="//challenge-1022.intigriti.io">Guest Challenge for Intigriti</a> - Difficulty - Hard - Insane
-*  <a href="//xss.0xgodson.com">Challenge 4</a> - Difficulty - Easy
-*  <a href="/chal5/">Challenge 5</a> - Difficulty - Easy 
+*  <a href="./chal1/">Challenge 1</a> - Difficulty - Medium
+*  <a href="./chal2/">Challenge 2</a> - Difficulty - Very Easy - Easy
+*  <a href="./chal3/">Challenge 3</a> - Difficulty - Medium - Hard
+*  <a href="//xss.0xgodson.com">Challenge 4</a> - Difficulty - Easy (taken down)
+*  <a href="./chal5/">Challenge 5</a> - Difficulty - Easy 
